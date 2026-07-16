@@ -2,51 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using typingPractice_Console.Properties;
 
 namespace MonkeyTypeConsole
 {
     class Program
     {
-        // 英文隨機字庫
-        // 100 個 C# 常用單字庫
-        // 200 個 C# 常用專業單字庫
-        static readonly string[] WordBank = {
-            // --- 基礎與流程控制 ---
-            "using", "namespace", "class", "program", "main", "void", "static", "return", "args", "true",
-            "false", "if", "else", "switch", "case", "break", "continue", "for", "foreach", "while",
-            "do", "new", "var", "const", "readonly", "null", "nullable", "dynamic", "value", "type",
-
-            // --- 資料型態與轉換 ---
-            "string", "int", "double", "float", "bool", "char", "byte", "long", "decimal", "array",
-            "convert", "parse", "tuple", "implicit", "explicit", "operator", "indexer", "param", "params", "yield",
-
-            // --- 物件導向程式設計 (OOP) ---
-            "object", "public", "private", "protected", "internal", "property", "method", "constructor", "struct", "event",
-            "base", "this", "interface", "abstract", "virtual", "override", "sealed", "enum", "delegate", "lambda",
-            "generic", "attribute", "record", "init", "pattern", "matching", "instance", "lifetime", "scope", "context",
-
-            // --- 記憶體與生命週期 ---
-            "garbage", "collector", "heap", "stack", "allocation", "destructor", "dispose", "initialize", "unsafe", "fixed",
-            "pointer", "reference",
-
-            // --- 集合與 LINQ ---
-            "console", "write", "read", "input", "output", "line", "key", "list", "dictionary", "format",
-            "clear", "count", "length", "index", "add", "remove", "contains", "find", "sort", "split",
-            "enumerable", "enumerator", "collection", "queue", "hashset", "capacity", "range", "sequence", "query", "order",
-            "by", "group", "join", "first", "last", "single", "any", "all", "skip", "take", "aggregate",
-
-            // --- 系統、執行緒與非同步 ---
-            "system", "exception", "try", "catch", "finally", "project", "solution", "reference", "assembly", "debug",
-            "throw", "task", "async", "await", "thread", "linq", "select", "where", "get", "set",
-            "lock", "monitor", "mutex", "semaphore", "cancel", "token", "progress", "delay", "run", "start",
-            "complete", "status", "result", "parallel", "factory", "scheduler",
-
-            // --- I/O、網路、資料與框架 ---
-            "stream", "buffer", "file", "directory", "path", "writer", "reader", "client", "server", "request",
-            "response", "header", "json", "xml", "serialize", "deserialize", "host", "port", "builder", "service",
-            "dependency", "injection", "provider", "singleton", "observer", "test", "assert", "mock", "unit", "middleware",
-            "controller", "action", "filter", "logger", "config"
-        };
+        static readonly string[] WordBank = Resources.WordBank.Split('\n');
 
         static void Main(string[] args)
         {
